@@ -31,7 +31,6 @@ h3 {
     justify-content: center;
     margin-top: 100px;
     gap: 30px;
-    perspective: 1000px;
 }
 
 .container-2 {
@@ -42,6 +41,7 @@ h3 {
     background-color: transparent;
     width: 300px;
     height: 300px;
+    perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -71,7 +71,7 @@ h3 {
 }
 
 .flip-card-back {
-    background-color: #022A44;
+    background-color: #011526;
     transform: rotateY(180deg);
 }
 
@@ -86,34 +86,31 @@ h3 {
     display: none;
 }
 
-.falling-star, .falling-star1 {
+.falling-star {
     position: absolute;
     width: 5px;
     height: 5px;
+    background-color: yellow;
     border-radius: 50%;
     animation: fall linear infinite;
 }
 
-.falling-star {
-    background-color: yellow;
-    left: calc(10% + 80% * random());
-    animation-duration: 3s;
+.falling-star1 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: fall linear infinite;
 }
 
-.falling-star1 {
-    background-color: blue;
-    left: calc(10% + 80% * random());
-    animation-duration: 4s;
-}
 
 @keyframes fall {
     0% {
-        top: -10px;
-        opacity: 1;
+        top: -10px; 
     }
     100% {
-        top: 100vh;
-        opacity: 0;
+        top: 100vh; 
     }
 }
 
@@ -134,8 +131,8 @@ h3 {
         page-break-after: always;
     }
 
-    h3 {
-        color: darkblue;
+    h3{
+      color:darkblue;
     }
 
     h4 {
@@ -154,7 +151,6 @@ h3 {
         width: 200px;
         height: 200px;
         display: block !important;
-        margin: auto;
     }
 
     .container-2 {
@@ -163,13 +159,13 @@ h3 {
 
     .flip-card {
         display: block !important;
-        width: 100%;
+        width: 400px;
         height: auto;
-        margin: 10px auto;
+        margin: 10px;
     }
 
     .invisible img {
         display: block !important;
-        margin: auto;
+        position: center;
     }
 }
