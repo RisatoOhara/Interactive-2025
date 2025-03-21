@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #DADADA;
+}
+
+.canvas {
+  width: 900px;
+  height: 556px;
+  margin: 100px auto;
+  background: white;
+  position: relative;
+  border: solid black 5px;
+}
+
+.snowman-body {
+  width: 150px;
+  height: 150px;
+  background-color: #E4EAF2;
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  left: 375px;
+}
+
+.snowman-head {
+  width: 100px;
+  height: 100px;
+  background-color: #E4EAF2;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 400px;
+}
+
+.snowman-nose {
+  width: 10px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 210px;
+  left: 440px;
+  transform: rotate(45deg);
+}
+
+
+.snowman-eye-left {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 425px;
+}
+
+.snowman-eye-right {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 465px;
+}
+
+.snowman-button1 {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 280px;
+  left: 440px;
+  transition: transform 0.3s;
+}
+
+
+.snowman-button2 {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 320px;
+  left: 440px;
+  transition: transform 0.3s;
+}
+
+.snowman-button3 {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 360px;
+  left: 440px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.snowman-button1:hover,
+.snowman-button2:hover,
+.snowman-button3:hover {
+  transform: scale(1.5);
+}
+
+.snowman-button1:hover {
+  background-color: green;
+}
+
+.snowman-button2:hover {
+  background-color: blue;
+}
+
+.snowman-button3:hover {
+  background-color: red;
+}
