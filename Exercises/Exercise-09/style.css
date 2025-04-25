@@ -1,0 +1,73 @@
+    body {
+      font-family: 'Georgia';
+      background: #161A73;
+      color: lightyellow;
+    }
+
+    h1{
+      text-align: center;
+      color:whitesmoke;
+    }
+
+    .calendar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .year {
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: lightyellow;
+    }
+
+    .month {
+      font-size: 1.5rem;
+      margin-bottom: 1em;
+      color: lightyellow;
+    }
+
+    .days {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 5px;
+    }
+
+    .day {
+      flex: 0 0 calc(100% / 7 - 5px);
+      background: #1C31A6;
+      border-radius: 8px;
+      padding: 10px;
+      min-height: 100px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .date-number {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .event {
+      font-size: 1rem;
+      margin-top: 4px;
+    }
+
+
+
+    .moon {
+      font-size: 3rem;
+    }
+
+    .highlight {
+      background-color: #3841F2;
+    }
+
+    .empty {
+      visibility: hidden;
+    }
