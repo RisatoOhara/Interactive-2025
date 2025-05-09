@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <meta charset="UTF-8"> 
-	    <title>Breakpoints</title>
-	    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-
-	<body>
-
-
-
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Pokémon Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Pokémon Sudowoodo</h1>
+  <div class="container">
+    <div class="item">
+      <picture>
+        <source media="(max-width: 768px)" srcset="https://img.game8.jp/4506977/e5cd6e987b3dc9302fe7649bd3f0284c.png/show">
+        <source media="(min-width: 768px) and (max-width: 1024px)" srcset="https://zukan.pokemon.co.jp/zukan-api/up/images/index/2aef8cf16d4c7ff4e1a0681b1cd3b92e.png">
+        <img src="https://pbs.twimg.com/media/EMjC9oBUwAAoVxt.jpg" alt="Responsive Pokémon" />
+      </picture>
+      <div class="caption">
+        <h2>Responsive Sudowoodo</h2>
+        <p>Sudowoodo (Japanese: ウソッキー Usokkie) is a Rock-type Pokémon introduced in Generation II. It evolves from Bonsly when leveled up while knowing Mimic.</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
